@@ -2,6 +2,8 @@ var express = require('express');
 
 var app = express();
 app.set('view engine', 'pug');
+//app.use(express.static('stylesheets'));
+app.use(express.static(__dirname + '/public'));
 
 var port = 3000;
 
