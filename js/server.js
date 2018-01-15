@@ -1,9 +1,9 @@
 var express = require('express');
+var path = require('path');
 
 var app = express();
 app.set('view engine', 'pug');
-app.use(express.static('stylesheets'));
-app.use(express.static(__dirname + '/public'));
+app.use(express.static('public/img'));
 
 var port = 3000;
 
