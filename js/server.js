@@ -13,6 +13,10 @@ app.get('/', function (req, res) {
     res.render('index', { title: 'Hey', message: 'Hello there!' });
 });
 
+app.get('/blog', (req, res) => {
+    res.render('blog', {});
+})
+
 app.get('*', function (req, res) {
     res.render('404', { path: 'zmmille2.github.io' + req.path }); // can I get this programmatically?
 })
